@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Sistem Absensi PKL</h1>
+            <p>Silakan login dengan email Google Anda</p>
+        </div>
+
+        <div class="clock">
+            <div class="time" id="clock">00:00:00</div>
+            <div class="date" id="date">Loading...</div>
+        </div>
+
+        <div class="alert alert-success" id="alertSuccess">
+            ✓ Berhasil!
+        </div>
+
+        <div class="alert alert-error" id="alertError">
+            ✗ Terjadi kesalahan!
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Memproses...</p>
+        </div>
+
+        <!-- LOGIN PAGE -->
+        <div id="loginPage" class="show">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Google</label>
+                    <input type="email" id="email" name="email" required placeholder="contoh@gmail.com" autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Masukkan password" autocomplete="current-password">
+                </div>
+
+                <button type="submit" class="btn btn-login btn-group-single">
+                    <span>🔐</span> Login
+                </button>
+            </form>
+        </div>
+
+        <!-- ABSEN PAGE -->
+        <div id="absenPage">
+            <div class="user-info" id="userInfo">
+                <div class="profile">
+                    <div class="avatar" id="userAvatar">A</div>
+                    <div class="details">
+                        <h3 id="userName">User Name</h3>
+                        <p id="userEmail">user@email.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="absenForm">
+                <div class="form-group">
+                    <label for="tipeAbsen">Tipe Absensi</label>
+                    <select id="tipeAbsen" name="tipeAbsen" required onchange="toggleAlasanField()">
+                        <option value="">Pilih Tipe Absensi</option>
+                        <option value="Masuk">Absen Masuk</option>
+                        <option value="Keluar">Absen Keluar</option>
+                        <option value="Izin">Izin/Tidak Hadir</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="alasanGroup" style="display: none;">
+                    <label for="alasan">Alasan Izin</label>
+                    <textarea id="alasan" name="alasan" placeholder="Jelaskan alasan izin Anda..."></textarea>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-masuk">
+                        <span>✓</span> Submit Absensi
+                    </button>
+                    <button type="button" class="btn btn-logout" onclick="logout()">
+                        <span>🚪</span> Logout
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            Powered by Google Sheets
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "email": "andi.wijaya@gmail.com",
+      "password": "andi123",
+      "nama": "Andi Wijaya",
+      "nim": "2021001",
+      "jurusan": "Teknik Informatika"
+    },
+    {
+      "email": "budi.santoso@gmail.com",
+      "password": "budi123",
+      "nama": "Budi Santoso",
+      "nim": "2021002",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "email": "citra.dewi@gmail.com",
+      "password": "citra123",
+      "nama": "Citra Dewi",
+      "nim": "2021003",
+      "jurusan": "Teknik Informatika"
+    },
+    {
+      "email": "dodi.prakoso@gmail.com",
+      "password": "dodi123",
+      "nama": "Dodi Prakoso",
+      "nim": "2021004",
+      "jurusan": "Manajemen Informatika"
+    },
+    {
+      "email": "eka.putri@gmail.com",
+      "password": "eka123",
+      "nama": "Eka Putri",
+      "nim": "2021005",
+      "jurusan": "Sistem Informasi"
+    },
+    {
+      "email": "fajar.ramadhan@gmail.com",
+      "password": "fajar123",
+      "nama": "Fajar Ramadhan",
+      "nim": "2021006",
+      "jurusan": "Teknik Informatika"
+    },
+    {
+      "email": "gita.sari@gmail.com",
+      "password": "gita123",
+      "nama": "Gita Sari",
+      "nim": "2021007",
+      "jurusan": "Desain Grafis"
+    },
+    {
+      "email": "hadi.kusuma@gmail.com",
+      "password": "hadi123",
+      "nama": "Hadi Kusuma",
+      "nim": "2021008",
+      "jurusan": "Teknik Komputer"
+    }
+  ]
+}
